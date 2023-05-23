@@ -1,0 +1,257 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%     Aug 31, 2021
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Tanmay Gupta Resume
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Tanmay}{Gupta}{ \urlstyle{same}\href{http://tanmaygupta.netlify.app}{tanmaygupta.netlify.app}\\
+\href{mailto:tanmaygupta@stern.nyu.edu}{Tanmay.Gupta@stern.nyu.edu} | 646.954.7455
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.28\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{New York University}
+\descript{BS in Business and Mathematics}
+\location{May 2020 | New York, NY}
+Stern School of Business \\
+Courant School of Mathematics \\
+\location{ Cum. GPA: 3.7 / 4.0 \\
+Major GPA: 3.9 / 4.0}
+\sectionsep
+
+\subsection{The Doon School}
+\location{May 2016 | Dehradun, India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate-Level}
+Mathematics of Machine Learning \\
+Numerical Optimization \\
+Stochastic Processes for Finance \\
+{\footnotesize \textit{\textbf{(Teaching Asst) }}} \\
+
+\sectionsep
+
+\subsection{Undergraduate}
+Numerical Analysis \\
+Theory of Probability \\
+Time Series Forecasting \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills \& Interests}
+\subsection{Programming}
+\location{Advanced:}
+Python \textbullet{} SQL \textbullet{} Git \\ 
+\location{Intermediate:}
+Docker \textbullet{} PySpark \textbullet{} R \textbullet{}
+PyTorch \textbullet{} MLFlow \textbullet{} Javascript \textbullet{} React \textbullet{} IBM/GCS Cloud \textbullet{} Bash
+\sectionsep 
+
+\subsection{Technicals}
+Tree-based Models \textbullet{} Time Series Forecasting \textbullet{} Data Engineering \textbullet{} Applied Probability \textbullet{} System Design  \textbullet{} Web Development
+\sectionsep
+
+\subsection{Soft}
+Communication \textbullet{} Presentation \textbullet{} Problem Solving
+\sectionsep
+
+\subsection{Interests}
+Sudoku \textbullet{} Swimming \textbullet{} Squash \textbullet{} Boxing \textbullet{} Sailing \textbullet{} World History \textbullet{} \textit{Westworld} \textbullet{} \textit{Altered Carbon}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/tg1482}{\bf tg1482} \\
+LinkedIn://  \href{https://www.linkedin.com/in/tanmaygupta173}{\bf tanmaygupta173} \\
+Medium:// \href{https://medium.com/@by-tg}{\bf @by-tg} \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Shopify Inc}
+\descript{| Data Scientist }
+\location{Jan 2022 - \textit{Present} | Seattle, WA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Architect and engineer demand forecasts for inventory allocation for 300K products across 50+ warehouses in North America enabling faster shipping
+\item Develop dashboard for warehouse operators to monitor \textit{backorders} and optimize labor planning, leading to 5\% increase in outbound SLA
+\item R\&D cutting-edge technologies such as network simulations, probabilistic transformers, and Uber's H3 geo-index for diverse optimization use cases
+\item Revamp internal on-call process, streamlining team communication and enhancing issue resolution efficiency for a newly formed 60+ team
+
+\end{tightemize}
+\sectionsep
+
+\runsubsection{IBM}
+\descript{| Data Scientist }
+\location{Aug 2020 - Dec 2021 | New York, NY}
+\begin{tightemize}
+\item Engineered and managed time series forecasts for IBM Cloud usage for 150K+ active accounts, leading a team of 2 data scientists
+    \begin{tightemize}
+    \vspace{\topsep} % Hacky fix for awkward extra vertical space
+    \item Est. \$12M in churn \& 9K+ person hours saved; 15\% usage uplift for contacted customers via A/B tests; 
+    \end{tightemize}  
+\vspace{\topsep} 
+\item Customized XGBoost meta-model to react to rare events by introducing \textit{Bias Time Series}, resulting in 10\% error drop to SMAPE of 35\%
+% Hacky fix for awkward extra vertical space
+% \item Coordinated team of 8 for recruiting efforts at NYU targeting 110 students
+\end{tightemize}
+\sectionsep
+
+\runsubsection{NYU NICHE Program}
+\descript{| Part-Time Data Scientist }
+\location{May 2018 – May 2020 | New York, NY}
+\begin{tightemize}
+\item Developed automated report generation pipeline for analysis of quarterly clinical survey data using tailored visualizations for 50+ client hospitals
+\item Advised the Managing Director on data-driven analyses such as hospital clustering, factor analysis, survey consistency tests, descriptive analysis, etc.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research \& Projects}
+
+\runsubsection{Kaggle Competition}
+\descript{| Brain Tumor Detection Participant}
+\location{July 2021 – Oct 2021 | New York, NY}
+Engineered tools to work efficiently with 100+GB of MRI data, normalized using temporal-aware methods, and customized + re-trained EfficientNet-3D CNN using PyTorch + Colab and published on \href{https://by-tg.medium.com/how-i-took-part-in-kaggles-brain-tumor-detection-competition-with-drive-colab-opensource-10-8ed90c1df8fc}{\bf Medium}
+\sectionsep
+
+\runsubsection{Rep2Vec}
+\descript{| Researcher}
+\location{May 2020 – Aug 2020 | New York, NY}
+Generated and explored embeddings for tweets and political figures using Twitter API and AWD-LSTM during 2020 presidential campaign to extract their opinion on key topics;
+Google Colab + NLU Engine, fastai, CUDA-ML, and PyTorch
+\sectionsep
+
+\runsubsection{Stern Undergraduate Research}
+\descript{| Researcher}
+\location{Sept 2017 – May 2020 | New York, NY}
+Researched under Dean Rohit Deo to compare model performance of categorical encoding methods in Ridge, Lasso, and ElasticNet regression models using R
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2021	 & IBM & IBM Rockstar | Hackathon Winner \\
+2019	 & NYU & Ahuja Family Research Scholar \\
+2017     & NYU & Stern Scholar | Dean's Scholar \\
+2016     & High School & School Colors for Excellency (top 1\%) \\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
